@@ -16,7 +16,7 @@
           <tr>
             <th scope="col">#</th>
             <th scope="col">Title</th>
-            <th scope="col">Category</th>
+            <th scope="col">Categoria</th>
             <th scope="col">Azioni</th>
           </tr>
         </thead>
@@ -40,6 +40,21 @@
         </tbody>
     </table>
     {{$posts->links()}}
+
+    {{-- <div>
+        @foreach ($categories as $category )
+        <h2>{{$category->name}}</h2>
+        <ul>
+            @forelse ($category->posts as $post)
+                <li>
+                    <a href="#">{{$post->title}}</a>
+                </li>
+            @empty
+                <li>Non sono presenti post</li>
+            @endforelse
+        </ul>
+        @endforeach
+    </div>
 
 </div>
 @endsection
