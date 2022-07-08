@@ -41,20 +41,20 @@
     </table>
     {{$posts->links()}}
 
-    {{-- <div>
+    <div>
         @foreach ($categories as $category )
         <h2>{{$category->name}}</h2>
         <ul>
             @forelse ($category->posts as $post)
                 <li>
-                    <a href="#">{{$post->title}}</a>
+                    <a href="{{route('admin.posts.show', $post)}}">{{$post->title}}</a>
                 </li>
             @empty
                 <li>Non sono presenti post</li>
             @endforelse
         </ul>
         @endforeach
-    </div> --}}
+    </div>
 
 </div>
 @endsection
