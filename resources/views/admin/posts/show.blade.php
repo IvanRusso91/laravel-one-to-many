@@ -5,8 +5,8 @@
 <div class="container text-center ">
     <h1 class="titolo">{{$posts->title}}
 
-    @if ($post->category)
-        <h3>Categoria: {{$post->category->name}}</h3>
+    @if ($posts->category)
+        <h3>Categoria: {{$posts->category->name}}</h3>
     @endif
 
     <a class="btn btn-primary" href="{{route('admin.posts.edit', $posts)}}">EDIT</a></h1>

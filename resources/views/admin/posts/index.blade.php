@@ -54,7 +54,7 @@
             @endforelse
         </ul>
         @endforeach
-    </div>
+    </div> --}}
 
 </div>
 @endsection
